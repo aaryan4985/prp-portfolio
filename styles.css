@@ -76,6 +76,10 @@ section {
     border-radius: 8px;
 }
 
+h2 {
+    color: #ffcc00;
+}
+
 /* Project Grid */
 .project-grid {
     display: flex;
