@@ -8,21 +8,41 @@
 </head>
 <body>
 
-    <h1>My Portfolio</h1>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>About Me</h2>
-    <p>Hi, I'm [Your Name]. I'm a student interested in web development.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm <strong>[Your Name]</strong>, an aspiring web developer passionate about creating interactive websites.</p>
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Project 1 - A basic website</li>
-        <li>Project 2 - A simple calculator</li>
-    </ul>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A personal website showcasing my skills and projects.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Simple Calculator</h3>
+            <p>A web-based calculator built using JavaScript.</p>
+        </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: yourname@example.com</p>
+        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </section>
 
-    <button onclick="location.href='birthday.html'">🎉 Birthday Invitation</button>
+    <button class="invite-btn" onclick="location.href='birthday.html'">🎉 Birthday Invitation</button>
 
 </body>
 </html>
