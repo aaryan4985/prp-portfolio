@@ -14,9 +14,10 @@
         Your browser does not support the video tag.
     </video>
 
+    <!-- Header -->
     <header>
         <div class="nav-container">
-            <h1>My Portfolio</h1>
+            <h1 class="logo">My Portfolio</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -27,31 +28,38 @@
         </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm <strong>[Your Name]</strong>, an aspiring web developer passionate about creating interactive websites.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm <strong>[Your Name]</strong>, a passionate web developer focused on creating sleek and responsive websites.</p>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A personal website showcasing my skills and projects.</p>
-        </div>
-        <div class="project">
-            <h3>Simple Calculator</h3>
-            <p>A web-based calculator built using JavaScript.</p>
-        </div>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal website showcasing my skills and projects.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Calculator App</h3>
+                    <p>A simple web-based calculator made with JavaScript.</p>
+                </div>
+            </div>
 
-        <!-- Birthday Button -->
-        <button class="invite-btn" onclick="location.href='birthday.html'">🎉 Birthday Invitation</button>
-    </section>
+            <!-- Birthday Invitation Button -->
+            <div class="button-container">
+                <button class="invite-btn" onclick="location.href='birthday.html'">🎉 Birthday Invitation</button>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: yourname@example.com</p>
+            <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+        </section>
+    </main>
 
 </body>
 </html>
