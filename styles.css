@@ -4,19 +4,44 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f4f4f4;
+    color: white; /* Ensure text is visible on video */
+    position: relative;
+    overflow-x: hidden;
 }
 
-/* Header */
+/* Background Video */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Keeps video in the background */
+}
+
+/* Header & Navigation */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background: rgba(44, 62, 80, 0.8); /* Slight transparency */
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -27,47 +52,38 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
 /* Sections */
 section {
-    margin: 40px auto;
+    margin: 100px auto;
     padding: 20px;
     max-width: 600px;
-    background: white;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent for readability */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-/* Projects */
-.project {
-    background: #e3e3e3;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
 }
 
 /* Buttons */
 button {
-    padding: 10px 20px;
-    background-color: blue;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
     color: white;
+    font-size: 16px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 10px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: darkblue;
-}
-
-/* Birthday Page */
-.birthday-container {
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 500px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
 }
